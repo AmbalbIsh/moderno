@@ -33,5 +33,15 @@ $(function () {
     $('.icon-th-list').removeClass('active');
   });
 
+   $('.menu__btn').on('click', function(){   //при media делать меню (нажимать на него) 
+    $('.menu__list').slideToggle();
+  });
+
+  $('.header__btn-menu').on('click', function(){   //при media делать меню (нажимать на него) 
+    $('.header__box').toggleClass('active');
+  });
+
+  
+
   var mixer = mixitup('.products__inner-box');
 });
